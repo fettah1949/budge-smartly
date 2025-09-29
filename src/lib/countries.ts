@@ -1,0 +1,48 @@
+import { Country } from '@/types';
+
+export const countries: Country[] = [
+  { code: 'US', name: 'United States', currency: 'USD', currencySymbol: '$' },
+  { code: 'GB', name: 'United Kingdom', currency: 'GBP', currencySymbol: '£' },
+  { code: 'EU', name: 'European Union', currency: 'EUR', currencySymbol: '€' },
+  { code: 'FR', name: 'France', currency: 'EUR', currencySymbol: '€' },
+  { code: 'DE', name: 'Germany', currency: 'EUR', currencySymbol: '€' },
+  { code: 'CA', name: 'Canada', currency: 'CAD', currencySymbol: 'C$' },
+  { code: 'AU', name: 'Australia', currency: 'AUD', currencySymbol: 'A$' },
+  { code: 'JP', name: 'Japan', currency: 'JPY', currencySymbol: '¥' },
+  { code: 'CN', name: 'China', currency: 'CNY', currencySymbol: '¥' },
+  { code: 'IN', name: 'India', currency: 'INR', currencySymbol: '₹' },
+  { code: 'BR', name: 'Brazil', currency: 'BRL', currencySymbol: 'R$' },
+  { code: 'MX', name: 'Mexico', currency: 'MXN', currencySymbol: '$' },
+  { code: 'ZA', name: 'South Africa', currency: 'ZAR', currencySymbol: 'R' },
+  { code: 'AE', name: 'United Arab Emirates', currency: 'AED', currencySymbol: 'د.إ' },
+  { code: 'SA', name: 'Saudi Arabia', currency: 'SAR', currencySymbol: 'ر.س' },
+  { code: 'EG', name: 'Egypt', currency: 'EGP', currencySymbol: 'E£' },
+  { code: 'MA', name: 'Morocco', currency: 'MAD', currencySymbol: 'د.م.' },
+  { code: 'DZ', name: 'Algeria', currency: 'DZD', currencySymbol: 'د.ج' },
+  { code: 'TN', name: 'Tunisia', currency: 'TND', currencySymbol: 'د.ت' },
+  { code: 'NG', name: 'Nigeria', currency: 'NGN', currencySymbol: '₦' },
+  { code: 'KE', name: 'Kenya', currency: 'KES', currencySymbol: 'KSh' },
+  { code: 'SG', name: 'Singapore', currency: 'SGD', currencySymbol: 'S$' },
+  { code: 'MY', name: 'Malaysia', currency: 'MYR', currencySymbol: 'RM' },
+  { code: 'ID', name: 'Indonesia', currency: 'IDR', currencySymbol: 'Rp' },
+  { code: 'TH', name: 'Thailand', currency: 'THB', currencySymbol: '฿' },
+  { code: 'VN', name: 'Vietnam', currency: 'VND', currencySymbol: '₫' },
+  { code: 'PH', name: 'Philippines', currency: 'PHP', currencySymbol: '₱' },
+  { code: 'KR', name: 'South Korea', currency: 'KRW', currencySymbol: '₩' },
+  { code: 'TR', name: 'Turkey', currency: 'TRY', currencySymbol: '₺' },
+  { code: 'RU', name: 'Russia', currency: 'RUB', currencySymbol: '₽' },
+  { code: 'PL', name: 'Poland', currency: 'PLN', currencySymbol: 'zł' },
+  { code: 'SE', name: 'Sweden', currency: 'SEK', currencySymbol: 'kr' },
+  { code: 'NO', name: 'Norway', currency: 'NOK', currencySymbol: 'kr' },
+  { code: 'DK', name: 'Denmark', currency: 'DKK', currencySymbol: 'kr' },
+  { code: 'CH', name: 'Switzerland', currency: 'CHF', currencySymbol: 'Fr' },
+  { code: 'NZ', name: 'New Zealand', currency: 'NZD', currencySymbol: 'NZ$' },
+  { code: 'AR', name: 'Argentina', currency: 'ARS', currencySymbol: '$' },
+  { code: 'CL', name: 'Chile', currency: 'CLP', currencySymbol: '$' },
+  { code: 'CO', name: 'Colombia', currency: 'COP', currencySymbol: '$' },
+  { code: 'PE', name: 'Peru', currency: 'PEN', currencySymbol: 'S/' },
+];
+
+export const getCountryByCode = (code: string): Country => {
+  return countries.find(c => c.code === code) || countries[0];
+};
